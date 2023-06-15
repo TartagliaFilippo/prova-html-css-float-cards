@@ -10,26 +10,53 @@ body {
   width: 100%;
 }
 
+img {
+  height: 100px;
+}
+
 /* UTILS */
-.clearfix {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* STRUCTURE */
+.cards img {
+  float: left;
+  margin-right: 10px;
+}
+
+.informations {
+  height: calc(100px / 3);
+  line-height: calc(100px / 3);
+}
+
+/* STRUCTURE CARDS*/
 .container {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-.container_cards {
-  width: 100%;
+.col {
+  display: inline-block;
+  width: 30%;
+  margin: 15px 1%;
+  background-color: #0f0e17;
 }
 
-.col {
-  width: calc(100% / 3);
-  background-color: red;
-  height: 100px;
+.informations * {
+  text-align: left;
+}
+
+h3,
+.task {
+  color: #fffffe;
+}
+
+a {
+  display: block;
+  color: #1b93dc;
+  font-size: 14px;
+  text-align: left;
 }
