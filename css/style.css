@@ -7,12 +7,19 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
 }
 
+/* UTILS */
 .clearfix {
   content: "";
   display: block;
   clear: both;
 }
 
-/* UTILS */
+/* STRUCTURE */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
